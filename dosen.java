@@ -6,7 +6,9 @@ public class Dosen extends Pegawai {
     public String nidn;
 
     public Dosen(String nip, String nama, double gaji, String nidn) {
-        System.out.println("objek dari class dosen dibuat");
+        this.nidn = nidn;
+        super(nip, nama, gaji);
+        // System.out.println("objek dari class dosen dibuat");
     }
 
     public String getInfo(){
